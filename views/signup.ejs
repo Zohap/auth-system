@@ -1,0 +1,78 @@
+<% layout("layouts/boilerplate") %>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+
+    <div class="card shadow p-4 auth-card">
+
+        <h2 class="text-center mb-4">Create Account</h2>
+
+        <form action="/signup" method="POST" id="signupForm">
+
+            <div class="mb-3">
+
+                <label class="form-label">Username</label>
+
+                <input
+                    type="text"
+                    class="form-control"
+                    name="username"
+                    id="username"
+                    required
+                >
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">Email</label>
+
+                <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    id="email"
+                    required
+                >
+
+            </div>
+
+            <div class="mb-3">
+
+                <label class="form-label">Password</label>
+
+                <input
+                    type="password"
+                    class="form-control"
+                    name="password"
+                    id="password"
+                    minlength="8"
+                    required
+                >
+
+                <small class="text-muted">
+                    Password must contain at least 8 characters.
+                </small>
+
+            </div>
+
+            <button class="btn btn-primary w-100">
+                Sign Up
+            </button>
+
+        </form>
+
+        <hr>
+
+        <p class="text-center mb-0">
+
+            Already have an account?
+
+            <a href="/login">
+                Login
+            </a>
+
+        </p>
+
+    </div>
+
+</div>

@@ -1,0 +1,70 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    min-height:100vh;
+}
+
+.auth-card{
+    width:420px;
+    border:none;
+    border-radius:15px;
+    background:#fff;
+}
+
+.card h2{
+    font-weight:600;
+    color:#0d6efd;
+}
+
+.form-control{
+    height:45px;
+    border-radius:10px;
+}
+
+.form-control:focus{
+    box-shadow:none;
+    border:2px solid #0d6efd;
+}
+
+.btn{
+    height:45px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.btn-primary,
+.btn-success,
+.btn-danger{
+    transition:.3s;
+}
+
+.btn-primary:hover,
+.btn-success:hover,
+.btn-danger:hover{
+    transform:translateY(-2px);
+}
+
+a{
+    text-decoration:none;
+}
+
+.alert{
+    border-radius:10px;
+}
+
+@media(max-width:576px){
+
+    .auth-card{
+        width:95%;
+    }
+
+}

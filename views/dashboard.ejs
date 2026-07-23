@@ -1,0 +1,21 @@
+<% layout("layouts/boilerplate") %>
+
+<div class="container mt-5">
+
+    <div class="card shadow p-5 text-center">
+
+        <h1 class="mb-3">
+            Welcome <%= currUser.username %> 👋
+        </h1>
+
+        <p class="lead">
+            You have successfully logged in.
+        </p>
+
+        <a href="/logout" class="btn btn-danger mt-3">
+            Logout
+        </a>
+
+    </div>
+
+</div>
